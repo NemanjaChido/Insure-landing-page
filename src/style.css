@@ -1,0 +1,101 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+@layer base {
+    h1,h2,h3{
+        font-family: "DM Serif Display", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    p{
+        font-family: "Karla", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+}
+
+@layer utilities {
+    .color-blue-950 {
+        color: hsl(256, 26%, 20%);
+    }
+    .color-blue-500 {
+        color: hsl(216, 30%, 68%);
+    }
+    .color-gray-700 {
+        color: hsl(273, 4%, 51%);
+    }
+    .color-gray-50 {
+        color: hsl(0, 0%, 98%);
+    }
+
+    /* extra styles for the header */
+    .background-gray-950 {
+        background-color: hsl(270, 9%, 17%);
+        background-image: url('/images/bg-pattern-mobile-nav.svg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+        color: white;
+    }
+
+    /* Extra styles for the hero section */
+    .background-blue-950{
+        background-color: hsl(256, 26%, 20%);
+        background-image: url('/images/bg-pattern-intro-left-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    /* blog section */
+    .blog-header::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 150px;
+        height: 1px;
+        background-color: gray;
+    }
+
+    /* footer */
+    .footer-background{
+        background-color: hsl(0, 0%, 98%);
+        background-image: url('/images/bg-pattern-footer-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+    }
+    .footer-header::after{
+        content: '';
+        position: absolute;
+        top: 8%;
+        width: 100%;
+        height: 1px;
+        background-color: gray;
+    }
+
+    @media screen and (min-width: 768px) {
+        .background-gray-950{
+            background-color: white;
+            background-image: none;
+        }
+        .blog-header::before{
+            top: 5%;
+        }
+        .link{
+            color: hsl(273, 4%, 51%);
+        }
+        .link:last-child.active{
+            color: white;
+            background-color: rgb(4, 4, 32);
+        }
+        .link:not(:last-child).active {
+            border: 1px solid rgb(4, 4, 32);
+        }
+        .footer-header::after{
+            top: 15%;
+        }
+    }
+
+}

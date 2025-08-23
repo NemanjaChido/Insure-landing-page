@@ -1,0 +1,12 @@
+# Design files (please do not remove 🙂)
+*.sketch
+*.fig
+*.xd
+
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+yarn.debug.log*
+yarn.error.log*
+npm-debug.log*
