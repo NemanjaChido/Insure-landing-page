@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/NemanjaChido/Insure-landing-page.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/NemanjaChido/Insure-landing-page.git)
+- Live Site URL: (https://nemanjachido.github.io/Insure-landing-page/)
 
 
 ### Built with
