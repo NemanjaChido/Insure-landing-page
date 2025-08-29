@@ -91,7 +91,7 @@
             background-color: rgb(4, 4, 32);
         }
         .link:not(:last-child).active {
-            border: 1px solid rgb(4, 4, 32);
+            color: hsl(274, 5%, 29%);
         }
         .footer-header::after{
             top: 15%;
