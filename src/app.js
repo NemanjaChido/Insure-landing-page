@@ -23,10 +23,7 @@ const handleClickedBtn = () => {
         if(clickedLink){
             links.forEach(link =>{
                 link.classList.remove('active');
-                // if(link !== links[links.length - 1]) {
-                //     link.classList.remove('border');
-                //     clickedLink[0].classList.add('active');
-                // }
+                
             });
             clickedLink.classList.add('active');
         }

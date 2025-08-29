@@ -43,9 +43,11 @@
     <!-- Hero section -->
     <section class="hero-page w-full h-screen md:h-[600px] background-blue-950 flex flex-col items-center">
       <section class="relative w-full h-full md:w-[80%] flex flex-col items-center md:flex-row">
-        <img class="w-full h-1/2 md:hidden" src="images/image-intro-mobile.jpg" alt="intro-image">
-        <img class="hidden md:flex md:absolute md:left-[50%] md:top-[10%] md:w-1/2 md:h-full" src="images/image-intro-desktop.jpg" alt="intro-image">
-        
+        <picture class="w-full h-1/2 md:h-full md:w-1/2 md:absolute md:left-[50%] md:top-[10%]">
+          <source media="(min-width: 768px)" srcset="images/image-intro-mobile.jpg">
+          <img class="w-full h-full" src="images/image-intro-desktop.jpg" alt="intro-image">
+        </picture>
+  
         <section class="relative w-[80%] h-1/2 flex flex-col items-center justify-center text-white md:h-full md:w-1/2 md:items-start ">
           <h1 class="font-bold text-4xl text-center md:text-start md:text-5xl">Humanizing your insurance.</h1>
           <p class="my-5 text-center md:text-start">Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that's right for you. Ensure you and your loved ones are protected.</p>
